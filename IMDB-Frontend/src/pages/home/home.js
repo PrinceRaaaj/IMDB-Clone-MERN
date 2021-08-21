@@ -27,7 +27,7 @@ const Home = () => {
                 {
                     popularMovies.map(movie => (
                         <Link style={{textDecoration: "none", color: "white"}} to={`/movie/${movie.id}`}>
-                            <div className="posterImage" onClick={() => alert("Clicked")}>
+                            <div className="posterImage">
                                 <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                             </div>
                             <div className="posterImage__overlay">
