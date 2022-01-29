@@ -1,6 +1,11 @@
+.posterImage{
+    height: 600px;
+}
+
 .posterImage > img {
     margin: auto;
     display: block;
+    width: 100%;
 }
 
 .posterImage__overlay {
@@ -24,7 +29,7 @@
 
 .posterImage__title {
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 0.4rem;
     text-align: left;
 }

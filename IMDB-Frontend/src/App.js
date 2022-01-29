@@ -5,7 +5,7 @@ import Header from "./components/header/Header"
 import MovieDetail from "./pages/movieDetail/movie"
 import MovieList from "./components/movieList/movieList"
 import Home from "./pages/home/home"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
 
@@ -13,12 +13,12 @@ function App() {
         <div className="App">
             <Router>
                 <Header />
-                <Switch>
-                <Route exact path="/"><Home /></Route>
-                <Route path="/movie/:id"><MovieDetail /></Route>
-                <Route path="/movies/:type"><MovieList  /></Route>
-                <Route path="/*"><h1>Error PAge</h1></Route>
-                </Switch> 
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="/movie/:id" element={<MovieDetail />} />
+                    <Route path="/movies/:type" element={<MovieList  />} />
+                    <Route path="/*" element={<h1>Error Page</h1>} />
+                </Routes> 
             </Router>
         </div>
     )

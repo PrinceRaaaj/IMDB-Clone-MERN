@@ -1,6 +1,6 @@
 .header {
     margin: 0 2.5rem;
-    padding: 1rem 0;
+    padding: .5rem 0;
     align-items: center;
     display: flex;
     justify-content:space-between;
@@ -24,7 +24,7 @@ a > span:hover {
 }
 
 .header__icon {
-    width: 100px;
+    width: 80px;
     cursor: pointer;
 }
 
